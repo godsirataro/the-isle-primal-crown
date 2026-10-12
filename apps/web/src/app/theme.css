@@ -1,0 +1,15 @@
+:root{--bg:#0b0b0b;--panel:#171510;--gold:#d4af37;--gold-light:#f0d18a;--muted:#b0a48e;--line:#65502d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#f4ecde;font:15px/1.65 Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+.container{width:min(1200px,calc(100% - 44px));margin-inline:auto}
+.topbar{border-bottom:1px solid #49381f;background:#0c0c0b;position:relative;z-index:10}
+.nav-row{min-height:85px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;white-space:nowrap;color:var(--gold-light);font:700 21px Georgia,serif;letter-spacing:.12em}
+.brand small{display:block;font:9px Arial,sans-serif;letter-spacing:.21em;color:#b59153;margin-top:3px}
+nav{display:flex;gap:26px;color:#e0ca9e;font-size:13px}nav a:hover{color:#fff0c1}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:9px 22px;border:1px solid;transition:transform .15s}
+.btn:hover:not(.disabled){transform:translateY(-2px)}.primary{background:linear-gradient(110deg,#efd381,#b88a2c);color:#211605;border-color:#efd381;font-weight:700}.outline{border-color:#af8633;color:#eac878;background:#18130d}.disabled{border-color:#54452a;background:#272117;color:#978b78;cursor:not-allowed}.muted{color:var(--muted);font-size:12px}
+.eyebrow{color:#d2ad60;letter-spacing:.2em;font-size:11px;font-weight:700}h1,h2,h3{font-family:Georgia,'Times New Roman',serif}
+footer{padding:28px 0;border-top:1px solid #322a1f}.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;color:#a19684;font-size:11px}
+@media(max-width:950px){.nav-row{flex-wrap:wrap;padding:13px 0}nav{width:100%;order:3;justify-content:center}}
+@media(max-width:640px){.container{width:calc(100% - 30px)}.brand{font-size:16px}.brand small{font-size:7px}nav{gap:15px;justify-content:space-between;font-size:12px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
